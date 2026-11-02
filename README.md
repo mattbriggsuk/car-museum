@@ -1,12 +1,14 @@
 # Digital Car Museum
 
-A Next.js App Router demo exploring automotive design from the 1950s through the 2020s. Built with React, TypeScript, and plain CSS.
+A Next.js App Router demo exploring automotive design from the 1950s through the 2020s. Built with Next.js 16, React 19, TypeScript and plain CSS, it combines server-rendered pages with interactive React components.
+
+The catalogue contains eight decades, five cars per decade and three photographs per car: 40 exhibits and 120 vehicle photographs. Data and assets live in the repository; no database, API keys or environment variables are required.
 
 <img width="1540" height="809" alt="image" src="https://github.com/user-attachments/assets/f5f4a26b-31bc-4839-a33e-24d402f4f66a" />
 
 ## Run locally
 
-Use Node.js 20.9 or newer (a current LTS version is recommended).
+The application requires Node.js 20.9 or newer. Use Node.js 22.18+ to run the catalogue tests as well.
 
 ```sh
 npm ci
@@ -20,40 +22,122 @@ npm run build
 npm start
 ```
 
-Run `npm run typecheck` to check TypeScript.
+Production needs a Node.js server with the project’s `public` assets available. The home and museum pages render on each request, so this app is not configured for static export. Catalogue changes require a new production build because the JSON files are imported into the application.
 
-## Routes
+## Pages and navigation
 
-- `/` and `/home`: the home page, rendered on the server for each request.
-- `/museum`: the decade collection.
-- `/museum/1950`: a decade with a sample car.
-- `/museum/1950/mercedes-benz-300-sl`: a sample car exhibit. The pattern is `/museum/[year]/[car]`, where year is the decade's starting year.
-- `/about`: introduction to the project.
+The shared header contains the Digital Car Museum car icon and links to Home, The collection and About. The footer links back to Home and to `/credits`.
 
-Home and museum routes use `force-dynamic` to demonstrate request-time server rendering. Their content is available in the initial HTML. The interactive decade browser is a React Client Component: Next.js also renders its initial HTML on the server, then React hydrates it in the browser. Its century buttons demonstrate client-side state updates without a server round-trip. It is not a client-only page.
+| Route | Content |
+| --- | --- |
+| `/` and `/home` | The same home page: museum/café hero, introduction, filterable decade cards and an About section. |
+| `/museum` | Collection introduction with a convertible-and-country-road image, followed by the same decade browser. |
+| `/museum/[year]` | All cars in a decade, shown as compact listings with a thumbnail on the left, name, model year, country, engine, description and estimated value. |
+| `/museum/[year]/[car]` | Individual exhibit: description and vehicle facts, image gallery, full-width estimated-value panel and a horizontal “More cars from the {year}s” carousel. |
+| `/about` | Project introduction and a link back to the home-page decades section. |
+| `/credits` | Supporting credits page, linked from the footer. |
 
-The catalogue is configured in `src/data/eras/1950.json` through `2020.json`, with five curated cars and three real photographs per car in all eight decades (40 cars and 120 photographs). `src/lib/collection.ts` loads and validates these files on the server. The home page receives a summary containing each era's default car and cover image; it does not download the full catalogue. No database or external API is required.
+`year` is the decade’s starting year, while `car` is the configured slug. For example:
 
-## Add cars and photographs
+```text
+/museum/1950
+/museum/1950/mercedes-benz-300-sl
+/museum/2020/rimac-nevera
+```
 
-Each era file contains its display information and a `cars` array. For example, `src/data/eras/2020.json`:
+Unknown decades or car slugs show the custom “A wrong turn” 404 page, with a link back to the collection.
+
+## Server and client rendering
+
+`/`, `/home`, `/museum`, `/museum/[year]` and `/museum/[year]/[car]` use `force-dynamic` for request-time server rendering. Their content is available in the initial HTML. `/about` and `/credits` use the default rendering behaviour and can be prerendered at build time.
+
+The server loads and validates the catalogue in `src/lib/collection.ts`. It passes only era summaries to the decade browser, gallery image data to the gallery and other cars from the selected decade to the carousel.
+
+The interactive components also receive an initial server render, then hydrate in the browser:
+
+- `DecadeBrowser`: filters the cards between All decades, 20th century and 21st century using local React state. The current filter groups 1950–1990 and 2000–2020 respectively.
+- `CarGallery`: opens a selected photograph in the separate, reusable `ImageZoomDialog` component. The modal supports keyboard activation, Escape, a close button and backdrop clicks; it manages focus and locks background scrolling while open.
+- `MoreCarsCarousel`: supports horizontal scrolling, previous/next buttons and left/right arrow keys when the track is focused. It excludes the current exhibit. Car links use Next.js `Link` for client-side route navigation while the destination page renders on the server.
+
+## Project structure
+
+```text
+src/
+  app/
+    layout.tsx                    Shared header, footer and metadata
+    globals.css                   Site styles and responsive layouts
+    page.tsx                      Home at /
+    home/page.tsx                 Home at /home
+    museum/page.tsx               Decade collection
+    museum/[year]/page.tsx        Cars in one decade
+    museum/[year]/[car]/page.tsx   Individual car exhibit
+    about/page.tsx                About page
+    credits/page.tsx              Credits page
+    not-found.tsx                 Custom 404 page
+  components/
+    home-page.tsx                 Shared home-page content
+    museum-mark.tsx               Header car icon
+    decade-browser.tsx            Decade cards and client-side filters
+    car-image.tsx                 Reusable image and placeholder display
+    car-gallery.tsx               Clickable exhibit gallery
+    image-zoom-dialog.tsx         Reusable image modal
+    car-valuation.tsx             Exhibit estimated-value panel
+    more-cars-carousel.tsx        Related exhibits in the same decade
+  data/
+    eras/1950.json … 2020.json     Eight catalogue configuration files
+    photo-credits.json            Per-image metadata
+  lib/
+    catalogue.ts                  Types, validation and default-car selection
+    collection.ts                 Server catalogue and image lookup
+    valuation.ts                  GBP range formatting
+public/images/
+  cars/1950/ … cars/2020/          Local vehicle JPEGs
+  museum-cafe-hero.webp            Home-page hero
+  collection-road-hero.webp        Collection-page hero
+  fifties-roadster.svg             Missing-image placeholder
+tests/catalogue.test.mjs           Catalogue and asset checks
+docs/image-prompts/                Artwork prompt files
+licence.md                        Licences, credits and reference material
+```
+
+The `tests`, `docs` and `licence.md` entries are at the project root. TypeScript’s `@/*` alias maps to `src/*`. Build configuration is in `next.config.ts` and `tsconfig.json`; scripts and dependencies are in `package.json`.
+
+## Collections
+
+Each decade has five exhibits. Exactly one car is marked as its default; that car’s first image appears on the decade card.
+
+| Decade | Configuration | Featured car |
+| --- | --- | --- |
+| 1950s | `src/data/eras/1950.json` | Mercedes-Benz 300 SL Gullwing |
+| 1960s | `src/data/eras/1960.json` | Jaguar E-Type Series 1 3.8 Coupé |
+| 1970s | `src/data/eras/1970.json` | Lamborghini Countach LP400 |
+| 1980s | `src/data/eras/1980.json` | Ferrari F40 |
+| 1990s | `src/data/eras/1990.json` | McLaren F1 |
+| 2000s | `src/data/eras/2000.json` | Porsche Carrera GT |
+| 2010s | `src/data/eras/2010.json` | BMW i8 |
+| 2020s | `src/data/eras/2020.json` | Rimac Nevera |
+
+## Add or edit an exhibit
+
+Edit the relevant `src/data/eras/{year}.json`. Each era contains its `year`, display `title`, `description` and a non-empty `cars` array. This is a minimal example of the structure, rather than the full existing 2020s collection:
 
 ```json
 {
   "year": 2020,
   "title": "Tomorrow, in motion",
-  "description": "A new era of electric performance begins to take shape.",
+  "description": "A new era of electric performance.",
   "cars": [
     {
       "slug": "rimac-nevera",
       "name": "Rimac Nevera",
       "engine": "Electric",
       "country": "Croatia",
-      "year": 2021,
-      "description": "The first sample exhibit in our 2020s collection.",
+      "year": 2022,
+      "description": "An electric performance exhibit.",
       "images": [
         "/images/cars/2020/rimac-nevera.01.jpeg",
-        "/images/cars/2020/rimac-nevera.02.jpeg"
+        "/images/cars/2020/rimac-nevera.02.jpeg",
+        "/images/cars/2020/rimac-nevera.03.jpeg"
       ],
       "default": true,
       "cost": null
@@ -62,100 +146,61 @@ Each era file contains its display information and a `cars` array. For example, 
 }
 ```
 
-- Add more car objects to the `cars` array. Each needs a unique lowercase, hyphenated `slug` for its URL and image filenames.
-- Set exactly one car per era to `"default": true`; set the others to `false`. Its first image appears on that era's home/collection card. Changing the default changes the featured car.
-- Put the actual JPEG files in `public/images/cars/{era}/{slug}.nn.jpeg`, using the era's start year as the folder (e.g. `2020`, even for a 2021 car). The image sequence uses at least two digits: `.01.jpeg`, `.02.jpeg`, etc.
-- JSON image paths start with `/images/`, without `public`. List images in the order they should appear. The car detail page displays every listed image.
-- Vehicle `year` must be within the era's ten-year range. `engine` is free text, so it can include displacement, layout, fuel type, or electric motor details.
-- All eight collections each include 15 local JPEG photographs. Missing future image files display the generic illustration with a clear placeholder caption. No incorrect vehicle photograph is substituted.
-- The era page lists all configured cars, and each links to `/museum/{era}/{slug}`.
+- Each car needs a unique lowercase, hyphenated `slug` within its era, plus non-empty `name`, `engine`, `country` and `description` fields.
+- The vehicle `year` must fall within the era’s ten-year range. The era’s `year` must match its filename and be a multiple of ten.
+- Set exactly one car per era to `"default": true`; all others must be `false`.
+- Place JPEGs in `public/images/cars/{era}/{slug}.nn.jpeg`. Use the decade’s starting year as the folder, even when the car’s model year differs. The sequence needs at least two digits.
+- List image paths starting with `/images/`, without `public`, in the desired gallery order. At least one image is required, and duplicate paths are rejected. The current collections each have three photographs per car.
+- Missing image files use the generic roadster illustration with a placeholder caption. Placeholder images cannot open the zoom dialog.
+- Include `cost`, using an estimate object or `null` to hide the value panel. See the schema below.
 
-Edit JSON or add photos during development to see the change on refresh. Rebuild after JSON changes for production. To introduce an additional era, create its JSON file and image folder, then register the file in `src/lib/collection.ts`.
+Development changes appear after the updated files are compiled and the page is refreshed. For a new decade, add its JSON file and image folder, then import and register it in the `decades` array in `src/lib/collection.ts`. Update the catalogue tests, which currently assert eight decades and the existing featured cars.
 
-Catalogue validation tests cover all era files, default selection, multiple cars/images, duplicate entries, and invalid paths and years. Run them with Node.js 22.18+:
+## Estimated values
+
+All 40 existing exhibits have a dated GBP estimate. Values appear in the era listings and in a compact, full-width panel below the exhibit gallery and above its carousel. Estimates describe collector-market values, not inflation-adjusted original retail prices, and do not update automatically.
+
+The `cost` object has these fields:
+
+| Field | Requirement |
+| --- | --- |
+| `currency` | `"GBP"` |
+| `min`, `max` | Finite numeric amounts; `min` must be positive and `max` must be at least `min`. |
+| `asOf` | A valid calendar date in `YYYY-MM-DD` format. |
+| `basis` | Non-empty text explaining the represented condition, specification and estimate scope. |
+| `sources` | A non-empty array of HTTPS evidence URLs. |
+
+`src/lib/valuation.ts` formats the range in pounds without decimal places. Set `cost` to `null` for an exhibit awaiting valuation; the current collection tests require populated estimates for the existing cars.
+
+## Styling and accessibility
+
+The site uses a 1950s motoring/café style: cream paper, cherry red and turquoise accents, condensed headings, script lettering and vintage sign details. Styles are in `src/app/globals.css`, including mobile layouts for the header, decade grid, thumbnail listings, gallery and value panel.
+
+DM Sans, Oswald and Lobster load through a Google Fonts CSS import, with local system fallbacks when unavailable. Accessibility features include a skip link, labelled controls, visible keyboard focus, filter pressed states and result announcements, modal focus handling and reduced-motion support.
+
+## Checks
+
+Check TypeScript:
+
+```sh
+npm run typecheck
+```
+
+Run the catalogue tests with Node.js 22.18+:
 
 ```sh
 node --experimental-strip-types --test tests/catalogue.test.mjs
 ```
 
-## Design
+The tests cover catalogue validation, default selection, invalid and duplicate entries, image naming, local image decoding and dimensions, duplicate photograph detection, metadata completeness, gallery view ordering, valuation validation and GBP formatting. The asset checks use `sharp`, supplied through the installed Next.js dependency tree.
 
-A 1950s motoring style: cream paper, cherry red and turquoise accents, condensed display headings, script lettering, vintage sign details, and a responsive decade grid. Keyboard focus, a skip link, reduced-motion support, and button pressed states are included.
+Validate the production build:
 
-Google Fonts supplies DM Sans, Oswald, and Lobster; system fonts provide offline fallbacks.
-
-## 1950s collection
-
-The five cars are an editorial selection of decade-defining designs, rather than a ranked sales or performance list. The JSON `year` identifies the represented model year. The 300 SL remains the default era cover.
-
-## 1960s collection
-
-The 1960s JSON now contains Jaguar E-Type Series 1 3.8 Coupé (1961, default cover), Aston Martin DB5 (1964), Ford Mustang 289 Coupé (1965), Porsche 911 2.0 Coupé (1965), and Lamborghini Miura P400 (1967).
-
-## Estimated present-day value (`cost`)
-
-Every car has a `cost` key. All forty cars have sourced, dated GBP ranges; use `null` for future exhibits until their values are researched. These are static estimates, displayed on car detail and era listing pages. They are current collector-market estimates, not original retail prices adjusted for inflation, and do not update automatically.
-
-```json
-"cost": {
-  "currency": "GBP",
-  "min": 13000,
-  "max": 23000,
-  "asOf": "2026-11-02",
-  "basis": "Indicative UK range for a good to excellent standard 289 V8 hardtop coupé; excludes Shelby, K-code, fastback and convertible premiums.",
-  "sources": [
-    "https://www.hagerty.co.uk/valuation/tool/results/?b=Coupe&cc=4735&md=Mustang&mk=Ford&sm=Base&y=1965"
-  ]
-}
+```sh
+npm run build
 ```
 
-`min` and `max` are positive numeric amounts, ordered low to high. `asOf` records the research date, `basis` describes the represented condition/specification and any comparable-based inference, and `sources` links to the evidence. The displayed source links allow readers to review the underlying figures.
-
-Most ranges round the consulted Hagerty UK guide’s good-to-excellent figures. The 1950 Porsche 356 1100 uses a clearly labelled editorial estimate informed by a current comparable 1951 split-screen dealer listing because exact UK 1100 data is scarce. The Bel Air range is an editorial estimate informed by a July 2026 UK four-door sedan auction result and current European listings. These two estimates are inferences rather than verbatim model-specific guide values. Condition, body style, originality and history can move individual cars outside the stated ranges.
-
-## 1970s collection
-
-The five exhibits are Lamborghini Countach LP400 (1974, default cover), Ferrari 308 GTB Vetroresina (1975), Porsche 928 (1978), Volkswagen Golf GTI Mk1 1.6 (1979), and Datsun 240Z (1972). Each has exactly three JPEGs in this order:
-
-1. `.01.jpeg`: front or front three-quarter view.
-2. `.02.jpeg`: rear or rear three-quarter view.
-3. `.03.jpeg`: cabin/interior view.
-
-Value-source URLs are stored with each car. Countach, 928, GTI and 240Z ranges round the consulted UK guide’s good-to-excellent figures. The Ferrari Vetroresina range is an editorial estimate around The Classic Valuer’s roughly £125,000 median, rather than a quoted condition-specific appraisal; its `cost.basis` makes that distinction explicit. Research date: 2 November 2026.
-
-## 1980s collection
-
-The five exhibits are Ferrari F40 (1988, default cover), Porsche 959 Komfort (1988), BMW M3 E30 (1987), DeLorean DMC-12 (1981), and Peugeot 205 GTI 1.6 (1986).
-
-The dated GBP ranges use Hagerty UK’s good-to-excellent guide figures, rounded where appropriate. Each car’s `cost.sources` links to its model-specific lookup. Research date: 2 November 2026.
-
-On every car detail page, the estimated-value panel spans the content width below the gallery and above the related-car carousel. A compact two-column desktop layout stacks on narrow screens.
-
-## 1990s collection
-
-Five exhibits: McLaren F1 (1995, default cover), Honda NSX (1991), Toyota Supra A80 Twin Turbo (1994), Dodge Viper RT/10 (1994), and Lamborghini Diablo (1991).
-
-Values are dated 2 November 2026 and link to their sources. F1, NSX and Diablo use UK guide good-to-excellent values. The Supra uses the guide’s broader A80 coupé category as an explicitly labelled proxy, rather than a turbo-specific appraisal. The Viper range is an editorial estimate around The Classic Valuer’s approximately £37,000 worldwide RT/10 median, which spans multiple model years. Each `cost.basis` explains the scope of the estimate.
-
-## 2000s collection
-
-Five exhibits: Porsche Carrera GT (2004, default cover), Ferrari Enzo (2003), Ford GT (2005), Bugatti Veyron 16.4 (2008), and Audi R8 4.2 FSI quattro (2007).
-
-Each `cost` records a GBP range, research date (2 November 2026), scope and direct source URL. All five ranges use Hagerty UK’s good-to-excellent guide figures, rounded where appropriate. The Carrera GT is represented as a 2004 example to match its guide lookup; the model debuted in 2003.
-
-## 2010s collection
-
-Five exhibits: BMW i8 (2014, default cover), McLaren MP4-12C (2012), Porsche 918 Spyder (2015), Ferrari 458 Italia (2010), and Mercedes-Benz SLS AMG (2010).
-
-All five GBP ranges use Hagerty UK’s good-to-excellent guide figures, rounded where appropriate. Each car records its exact guide URL, condition/specification scope and research date of 2 November 2026. Values remain below the gallery and above the related-car carousel.
-
-## 2020s collection
-
-Five exhibits: Rimac Nevera (2022, default cover), Ferrari Roma (2021), Porsche Taycan 4S (2020), Maserati MC20 (2023), and Lotus Emira V6 First Edition (2024).
-
-The value ranges are editorial estimates researched on 2 November 2026, rather than condition-specific guide quotations. Nevera, Roma, MC20 and Emira use The Classic Valuer’s aggregated worldwide sales as broad references; Nevera evidence is especially sparse, and the Emira lookup covers more than the featured V6 First Edition. The Taycan estimate uses Porsche Approved used asking-price evidence, including a roughly £49,000 2020 4S listing, rather than treating the broader historical auction median as today’s UK price. Each `cost.basis` explains its inference and links directly to the evidence. Asking prices are not completed sale prices, and these static estimates do not update automatically.
-
-Car-detail photos are rendered by the `CarGallery` client component. The separate reusable `ImageZoomDialog` React component uses the native modal dialog: it supports keyboard activation, Escape, its close button and backdrop clicks, confines focus while open, restores focus on close, and locks background scrolling. The surrounding car page remains server-rendered.
+There is currently no `npm test` or lint script.
 
 ## Licence
 

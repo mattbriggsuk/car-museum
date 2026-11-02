@@ -123,3 +123,35 @@ The two generated scenes are original atmospheric artwork created for this proje
 - [Porsche: original Taycan 4S](https://newsroom.porsche.com/en/2019/products/porsche-taycan-4s-electric-sports-car-entry-level-model-18901.html).
 - [Maserati: MC20 and Nettuno V6](https://www.media.stellantis.com/us-en/maserati/press/maserati-mc20).
 - [Lotus: Emira V6 First Edition specification](https://media.lotuscars.com/en/news-articles/lotus-confirms-full-specification-and-price-of-all-new-emira-v6-first-edition.html).
+
+## Valuation research notes
+
+The catalogue stores the estimate basis, research date and evidence links with each car. The following notes describe the current dataset.
+
+### 1950s and 1960s
+
+Most ranges round the consulted Hagerty UK guide’s good-to-excellent figures. The 1950 Porsche 356 1100 uses a clearly labelled editorial estimate informed by a current comparable 1951 split-screen dealer listing because exact UK 1100 data is scarce. The Bel Air range is an editorial estimate informed by a July 2026 UK four-door sedan auction result and current European listings. These two estimates are inferences rather than verbatim model-specific guide values. Condition, body style, originality and history can move individual cars outside the stated ranges.
+
+### 1970s
+
+Value-source URLs are stored with each car. Countach, 928, GTI and 240Z ranges round the consulted UK guide’s good-to-excellent figures. The Ferrari Vetroresina range is an editorial estimate around The Classic Valuer’s roughly £125,000 median, rather than a quoted condition-specific appraisal; its `cost.basis` makes that distinction explicit. Research date: 2 November 2026.
+
+### 1980s
+
+The dated GBP ranges use Hagerty UK’s good-to-excellent guide figures, rounded where appropriate. Each car’s `cost.sources` links to its model-specific lookup. Research date: 2 November 2026.
+
+### 1990s
+
+Values are dated 2 November 2026 and link to their sources. F1, NSX and Diablo use UK guide good-to-excellent values. The Supra uses the guide’s broader A80 coupé category as an explicitly labelled proxy, rather than a turbo-specific appraisal. The Viper range is an editorial estimate around The Classic Valuer’s approximately £37,000 worldwide RT/10 median, which spans multiple model years. Each `cost.basis` explains the scope of the estimate.
+
+### 2000s
+
+Each `cost` records a GBP range, research date (2 November 2026), scope and direct source URL. All five ranges use Hagerty UK’s good-to-excellent guide figures, rounded where appropriate. The Carrera GT is represented as a 2004 example to match its guide lookup; the model debuted in 2003.
+
+### 2010s
+
+All five GBP ranges use Hagerty UK’s good-to-excellent guide figures, rounded where appropriate. Each car records its exact guide URL, condition/specification scope and research date of 2 November 2026. Values remain below the gallery and above the related-car carousel.
+
+### 2020s
+
+The value ranges are editorial estimates researched on 2 November 2026, rather than condition-specific guide quotations. Nevera, Roma, MC20 and Emira use The Classic Valuer’s aggregated worldwide sales as broad references; Nevera evidence is especially sparse, and the Emira lookup covers more than the featured V6 First Edition. The Taycan estimate uses Porsche Approved used asking-price evidence, including a roughly £49,000 2020 4S listing, rather than treating the broader historical auction median as today’s UK price. Each `cost.basis` explains its inference and links directly to the evidence. Asking prices are not completed sale prices, and these static estimates do not update automatically.
