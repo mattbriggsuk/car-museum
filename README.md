@@ -2,6 +2,8 @@
 
 A Next.js App Router demo exploring automotive design from the 1950s through the 2020s. Built with React, TypeScript, and plain CSS.
 
+<img width="1540" height="809" alt="image" src="https://github.com/user-attachments/assets/f5f4a26b-31bc-4839-a33e-24d402f4f66a" />
+
 ## Run locally
 
 Use Node.js 20.9 or newer (a current LTS version is recommended).
