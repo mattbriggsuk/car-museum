@@ -1,0 +1,127 @@
+{
+  "year": 1970,
+  "title": "No ordinary decade",
+  "description": "Bold silhouettes and fresh ideas take automotive design somewhere new.",
+  "cars": [
+    {
+      "slug": "lamborghini-countach",
+      "name": "Lamborghini Countach LP400",
+      "engine": "3.9-litre V12 petrol (3,929 cc)",
+      "country": "Italy",
+      "year": 1974,
+      "description": "The original Countach LP400 turned the wedge-shaped dream car into a road-going reality. Its low nose, dramatic scissor doors and V12 mounted behind the cabin made it a defining supercar of the decade. The early LP400’s clean bodywork has a purity distinct from the wider, more heavily spoilered versions that followed.",
+      "default": true,
+      "cost": {
+        "currency": "GBP",
+        "min": 720000,
+        "max": 950000,
+        "asOf": "2026-11-02",
+        "basis": "Rounded UK guide range for good to excellent LP400 examples. Later LP400 S, 5000 and anniversary variants have different values.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?b=Coupe&cc=3929&md=Countach&mk=Lamborghini&sm=LP400&y=1974"
+        ]
+      },
+      "images": [
+        "/images/cars/1970/lamborghini-countach.01.jpeg",
+        "/images/cars/1970/lamborghini-countach.02.jpeg",
+        "/images/cars/1970/lamborghini-countach.03.jpeg"
+      ]
+    },
+    {
+      "slug": "ferrari-308-gtb",
+      "name": "Ferrari 308 GTB Vetroresina",
+      "engine": "2.9-litre transverse V8 petrol (2,926 cc)",
+      "country": "Italy",
+      "year": 1975,
+      "description": "Introduced in 1975, the 308 GTB paired Pininfarina’s compact sports-car shape with a transverse V8 behind the seats. The first cars used a glassfibre body, earning the Vetroresina name. Its flowing profile and open-gated manual gear lever helped define the character of Ferrari’s smaller mid-engined road cars.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 100000,
+        "max": 150000,
+        "asOf": "2026-11-02",
+        "basis": "Editorial GBP range around the consulted Vetroresina market guide’s roughly £125,000 median. Covers sound to excellent glassfibre GTBs; individual sales vary, and later steel-bodied GTBs are a different market.",
+        "sources": [
+          "https://www.theclassicvaluer.com/cars/ferrari/308-gtb-vetroresina"
+        ]
+      },
+      "images": [
+        "/images/cars/1970/ferrari-308-gtb.01.jpeg",
+        "/images/cars/1970/ferrari-308-gtb.02.jpeg",
+        "/images/cars/1970/ferrari-308-gtb.03.jpeg"
+      ]
+    },
+    {
+      "slug": "porsche-928",
+      "name": "Porsche 928",
+      "engine": "4.5-litre water-cooled V8 petrol (4,474 cc)",
+      "country": "Germany",
+      "year": 1978,
+      "description": "Porsche’s 928 offered a different vision of the sports car: a front-mounted V8, a spacious grand-touring cabin and a distinctive rounded body. Unveiled in 1977, it reached series production for the 1978 model year. Its rear-mounted transmission and individual styling made it a striking alternative to the familiar 911.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 10000,
+        "max": 17000,
+        "asOf": "2026-11-02",
+        "basis": "Rounded UK guide range for good to excellent early 4.5-litre 928 examples. Transmission, maintenance history and originality affect value; later S, S4 and GTS models are separate markets.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?b=Coupe&cc=4474&md=928&mk=Porsche&sm=Base&y=1978"
+        ]
+      },
+      "images": [
+        "/images/cars/1970/porsche-928.01.jpeg",
+        "/images/cars/1970/porsche-928.02.jpeg",
+        "/images/cars/1970/porsche-928.03.jpeg"
+      ]
+    },
+    {
+      "slug": "volkswagen-golf-gti",
+      "name": "Volkswagen Golf GTI Mk1",
+      "engine": "1.6-litre fuel-injected inline-four petrol (1,588 cc)",
+      "country": "Germany",
+      "year": 1979,
+      "description": "The first Golf GTI helped make the practical hatchback an enthusiast’s car. Launched in 1976, it combined a light three-door body with a fuel-injected engine and sporting details. This 1979 example represents the original 1.6-litre generation, before later Mk1 updates and the larger 1.8-litre engine.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 16000,
+        "max": 28000,
+        "asOf": "2026-11-02",
+        "basis": "Rounded UK guide range for good to excellent 1.6-litre Mk1 GTI examples. Original early cars can command a premium; later 1.8-litre models, modified cars and cabriolets are separate markets.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?b=Hatchback&cc=1588&md=Golf&mk=Volkswagen&sm=GTI+Mk+I&y=1979"
+        ]
+      },
+      "images": [
+        "/images/cars/1970/volkswagen-golf-gti.01.jpeg",
+        "/images/cars/1970/volkswagen-golf-gti.02.jpeg",
+        "/images/cars/1970/volkswagen-golf-gti.03.jpeg"
+      ]
+    },
+    {
+      "slug": "datsun-240z",
+      "name": "Datsun 240Z",
+      "engine": "2.4-litre inline-six petrol (L24, 2,393 cc)",
+      "country": "Japan",
+      "year": 1972,
+      "description": "The 240Z brought a long bonnet, a fastback roofline and straight-six power to Datsun’s international sports-car range. Its combination of performance and everyday usability won a following well beyond Japan. The three-dial dashboard and opening rear hatch remain characteristic details of this early Z-car generation.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 27000,
+        "max": 36000,
+        "asOf": "2026-11-02",
+        "basis": "Rounded UK guide range for good to excellent standard 240Z examples. Rust condition, originality, steering configuration and restoration quality affect value; competition conversions are excluded.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?b=Coupe&cc=2393&md=240Z&mk=Datsun&sm=Base&y=1972"
+        ]
+      },
+      "images": [
+        "/images/cars/1970/datsun-240z.01.jpeg",
+        "/images/cars/1970/datsun-240z.02.jpeg",
+        "/images/cars/1970/datsun-240z.03.jpeg"
+      ]
+    }
+  ]
+}

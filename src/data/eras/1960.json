@@ -1,0 +1,127 @@
+{
+  "year": 1960,
+  "title": "The beautiful revolution",
+  "description": "British elegance, American optimism, and a new generation of European sports cars.",
+  "cars": [
+    {
+      "slug": "jaguar-e-type",
+      "name": "Jaguar E-Type Series 1 3.8 Coupé",
+      "engine": "3.8-litre inline-six petrol",
+      "country": "United Kingdom",
+      "year": 1961,
+      "description": "The E-Type arrived at Geneva in 1961 with a long bonnet, flowing bodywork and the character of Jaguar’s racing cars. Its 3.8-litre XK six-cylinder engine helped make it a defining British sports car. The fixed-head coupé pairs those famous curves with a practical opening rear hatch.",
+      "default": true,
+      "images": [
+        "/images/cars/1960/jaguar-e-type.01.jpeg",
+        "/images/cars/1960/jaguar-e-type.02.jpeg",
+        "/images/cars/1960/jaguar-e-type.03.jpeg"
+      ],
+      "cost": {
+        "currency": "GBP",
+        "min": 65000,
+        "max": 80000,
+        "asOf": "2026-11-02",
+        "basis": "Indicative UK range for a good to excellent early 3.8-litre fixed-head coupé. Outside-bonnet-lock, competition and exceptional-provenance examples are separate markets.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?b=FHC&cc=3781&md=E-Type&mk=Jaguar&sm=SI+3.8+Flat+Floor&y=1961"
+        ]
+      }
+    },
+    {
+      "slug": "aston-martin-db5",
+      "name": "Aston Martin DB5",
+      "engine": "4.0-litre inline-six petrol",
+      "country": "United Kingdom",
+      "year": 1964,
+      "description": "The DB5 combined elegant grand-touring bodywork with a four-litre straight-six engine. Introduced in 1963, it became a lasting symbol of British motoring, helped by its appearance in Goldfinger. Beneath the film-star reputation is a refined touring car built for covering long distances in style.",
+      "default": false,
+      "images": [
+        "/images/cars/1960/aston-martin-db5.01.jpeg",
+        "/images/cars/1960/aston-martin-db5.02.jpeg",
+        "/images/cars/1960/aston-martin-db5.03.jpeg"
+      ],
+      "cost": {
+        "currency": "GBP",
+        "min": 300000,
+        "max": 420000,
+        "asOf": "2026-11-02",
+        "basis": "Indicative UK market range for good to excellent standard examples; condition, originality and provenance affect value.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?b=Saloon&cc=3995&md=DB5&mk=Aston+Martin&sm=Base&y=1964"
+        ]
+      }
+    },
+    {
+      "slug": "ford-mustang",
+      "name": "Ford Mustang 289 Coupé",
+      "engine": "4.7-litre V8 petrol (289 cu in)",
+      "country": "United States",
+      "year": 1965,
+      "description": "Unveiled to the public in April 1964, the Mustang brought long-bonnet, short-deck styling to a broad audience. A choice of engines and equipment let buyers make it their own. This 1965 hardtop represents the classic 289 V8 version of the car that helped define the pony-car era.",
+      "default": false,
+      "images": [
+        "/images/cars/1960/ford-mustang.01.jpeg",
+        "/images/cars/1960/ford-mustang.02.jpeg",
+        "/images/cars/1960/ford-mustang.03.jpeg"
+      ],
+      "cost": {
+        "currency": "GBP",
+        "min": 13000,
+        "max": 23000,
+        "asOf": "2026-11-02",
+        "basis": "Indicative UK range for a good to excellent standard 289 V8 hardtop coupé; excludes Shelby, K-code, fastback and convertible premiums.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?b=Coupe&cc=4735&md=Mustang&mk=Ford&sm=Base&y=1965"
+        ]
+      }
+    },
+    {
+      "slug": "porsche-911",
+      "name": "Porsche 911 2.0 Coupé",
+      "engine": "2.0-litre air-cooled flat-six petrol",
+      "country": "Germany",
+      "year": 1965,
+      "description": "The original 911 carried Porsche’s sports-car ideas into a new generation. Its rear-mounted two-litre flat-six engine, compact proportions and distinctive roofline established a template that would evolve for decades. This early short-wheelbase coupé captures the simplicity and character of the first production cars.",
+      "default": false,
+      "images": [
+        "/images/cars/1960/porsche-911.01.jpeg",
+        "/images/cars/1960/porsche-911.02.jpeg",
+        "/images/cars/1960/porsche-911.03.jpeg"
+      ],
+      "cost": {
+        "currency": "GBP",
+        "min": 80000,
+        "max": 100000,
+        "asOf": "2026-11-02",
+        "basis": "Indicative UK market range for good to excellent standard examples; condition, originality and provenance affect value.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?b=Coupe&cc=1991&md=911&mk=Porsche&sm=%222.0%22&y=1965"
+        ]
+      }
+    },
+    {
+      "slug": "lamborghini-miura",
+      "name": "Lamborghini Miura P400",
+      "engine": "3.9-litre transverse V12 petrol (3,929 cc)",
+      "country": "Italy",
+      "year": 1967,
+      "description": "First shown in 1966, the Miura brought a transverse V12 mounted behind the occupants into a breathtakingly low sports-car shape. Its sweeping bodywork and dramatic proportions made the P400 a landmark of Italian design. It helped establish the mid-engined layout as the image of the modern supercar.",
+      "default": false,
+      "images": [
+        "/images/cars/1960/lamborghini-miura.01.jpeg",
+        "/images/cars/1960/lamborghini-miura.02.jpeg",
+        "/images/cars/1960/lamborghini-miura.03.jpeg"
+      ],
+      "cost": {
+        "currency": "GBP",
+        "min": 1300000,
+        "max": 1600000,
+        "asOf": "2026-11-02",
+        "basis": "Indicative UK range for a good to excellent original P400; later S, SV and special-provenance cars are separate markets.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?b=Coupe&cc=3929&md=Miura&mk=Lamborghini&sm=P400&y=1967"
+        ]
+      }
+    }
+  ]
+}

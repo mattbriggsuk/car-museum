@@ -1,0 +1,127 @@
+{
+  "year": 2000,
+  "title": "A different kind of fast",
+  "description": "New materials, new possibilities, and performance without precedent.",
+  "cars": [
+    {
+      "slug": "porsche-carrera-gt",
+      "name": "Porsche Carrera GT",
+      "engine": "5.7-litre naturally aspirated V10 petrol (5,733 cc)",
+      "country": "Germany",
+      "year": 2004,
+      "description": "The Carrera GT brought racing technology to a road-going Porsche with a carbon-fibre structure, a naturally aspirated V10 and a six-speed manual gearbox. Its removable roof panels and raised gear lever gave the cabin a distinctive character. The sculpted engine cover and clean bodywork expressed a focused approach to supercar design.",
+      "default": true,
+      "cost": {
+        "currency": "GBP",
+        "min": 1700000,
+        "max": 2000000,
+        "asOf": "2026-11-02",
+        "basis": "UK guide range for good to excellent standard 2004 Carrera GT examples. Mileage, originality and specialist maintenance history affect value; modified cars and exceptional provenance are separate considerations.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?y=2004&mk=Porsche&md=Carrera+GT&sm=Base&cc=5733&b=Targa"
+        ]
+      },
+      "images": [
+        "/images/cars/2000/porsche-carrera-gt.01.jpeg",
+        "/images/cars/2000/porsche-carrera-gt.02.jpeg",
+        "/images/cars/2000/porsche-carrera-gt.03.jpeg"
+      ]
+    },
+    {
+      "slug": "ferrari-enzo",
+      "name": "Ferrari Enzo",
+      "engine": "6.0-litre naturally aspirated V12 petrol",
+      "country": "Italy",
+      "year": 2003,
+      "description": "Named after Ferrari’s founder, the Enzo translated competition technology into a dramatic road car. A carbon-fibre chassis, naturally aspirated V12 and paddle-shift transmission sat beneath angular bodywork shaped around aerodynamic performance. Its pointed nose, rising doors and purposeful cabin captured Ferrari’s early-2000s vision of the flagship supercar.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 6000000,
+        "max": 6800000,
+        "asOf": "2026-11-02",
+        "basis": "UK guide range for good to excellent standard 2003 Enzo road cars. Mileage, service history and provenance can substantially affect individual prices; FXX competition cars are excluded.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?y=2003&mk=Ferrari&md=Enzo&sm=Base&cc=5999&b=Coupe"
+        ]
+      },
+      "images": [
+        "/images/cars/2000/ferrari-enzo.01.jpeg",
+        "/images/cars/2000/ferrari-enzo.02.jpeg",
+        "/images/cars/2000/ferrari-enzo.03.jpeg"
+      ]
+    },
+    {
+      "slug": "ford-gt",
+      "name": "Ford GT",
+      "engine": "5.4-litre supercharged V8 petrol (5,409 cc)",
+      "country": "United States",
+      "year": 2005,
+      "description": "The reborn Ford GT recalled the proportions of the Le Mans-winning GT40 while using modern engineering throughout. A supercharged V8 and six-speed manual gearbox powered the mid-engined coupé. Roof-cut doors, round rear lights and a low, wide stance connected Ford’s racing heritage with the supercar ambitions of a new century.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 383000,
+        "max": 443000,
+        "asOf": "2026-11-02",
+        "basis": "UK guide range for good to excellent standard 2005 GT coupés. Heritage liveries, very low mileage and modifications can change values; the later V6-powered GT is a different generation.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?y=2005&mk=Ford&md=GT&sm=Base&cc=5400&b=Coupe"
+        ]
+      },
+      "images": [
+        "/images/cars/2000/ford-gt.01.jpeg",
+        "/images/cars/2000/ford-gt.02.jpeg",
+        "/images/cars/2000/ford-gt.03.jpeg"
+      ]
+    },
+    {
+      "slug": "bugatti-veyron",
+      "name": "Bugatti Veyron 16.4",
+      "engine": "8.0-litre quad-turbocharged W16 petrol (7,993 cc)",
+      "country": "France",
+      "year": 2008,
+      "description": "The Veyron combined a quad-turbocharged W16 with all-wheel drive and a carefully finished two-seat cabin. Production began in 2005, bringing Bugatti’s extraordinary engineering project to the road. Its rounded silhouette, horseshoe grille and twin-tone bodywork gave extreme performance a distinctive grand-touring presence rather than a stripped-back racing character.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 1100000,
+        "max": 1400000,
+        "asOf": "2026-11-02",
+        "basis": "UK guide range for good to excellent standard 2008 Veyron 16.4 coupés. Grand Sport, Super Sport, special editions and exceptional provenance have different values.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?y=2008&mk=Bugatti&md=Veyron&sm=16.4&cc=7993&b=Coupe"
+        ]
+      },
+      "images": [
+        "/images/cars/2000/bugatti-veyron.01.jpeg",
+        "/images/cars/2000/bugatti-veyron.02.jpeg",
+        "/images/cars/2000/bugatti-veyron.03.jpeg"
+      ]
+    },
+    {
+      "slug": "audi-r8",
+      "name": "Audi R8 4.2 FSI quattro",
+      "engine": "4.2-litre naturally aspirated V8 petrol (4,163 cc)",
+      "country": "Germany",
+      "year": 2007,
+      "description": "Audi’s first production R8 paired a mid-mounted V8 with quattro all-wheel drive and an aluminium structure. The original coupé’s contrasting side blades and low roofline made it instantly recognisable. A driver-focused cabin and available open-gated manual gearbox helped give this everyday-usable sports car a character of its own.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 29000,
+        "max": 37000,
+        "asOf": "2026-11-02",
+        "basis": "Rounded UK guide range for good to excellent 2007 4.2 FSI coupés. Transmission, mileage and service history affect value; V10, GT, Spyder and second-generation models are excluded.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?y=2007&mk=Audi&md=R8&sm=4.2+FSI&cc=4163&b=Coupe"
+        ]
+      },
+      "images": [
+        "/images/cars/2000/audi-r8.01.jpeg",
+        "/images/cars/2000/audi-r8.02.jpeg",
+        "/images/cars/2000/audi-r8.03.jpeg"
+      ]
+    }
+  ]
+}

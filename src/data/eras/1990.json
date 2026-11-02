@@ -1,0 +1,127 @@
+{
+  "year": 1990,
+  "title": "Engineering an icon",
+  "description": "Analogue feeling meets a new level of engineering precision.",
+  "cars": [
+    {
+      "slug": "mclaren-f1",
+      "name": "McLaren F1",
+      "engine": "6.1-litre BMW V12 petrol (6,064 cc)",
+      "country": "United Kingdom",
+      "year": 1995,
+      "description": "The F1 placed its driver in the centre of a three-seat cabin and paired a carbon-fibre structure with a naturally aspirated BMW V12. Gordon Murray’s design pursued low weight and exceptional response. Its compact proportions, dihedral doors and carefully considered details made it a landmark of 1990s supercar engineering.",
+      "default": true,
+      "cost": {
+        "currency": "GBP",
+        "min": 15400000,
+        "max": 18600000,
+        "asOf": "2026-11-02",
+        "basis": "UK guide range for good to excellent standard 1995 F1 road cars. LM, GT and GTR variants, competition history and exceptional provenance have different values.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?b=Coupe&cc=6064&md=F1&mk=McLaren&sm=Base&y=1995"
+        ]
+      },
+      "images": [
+        "/images/cars/1990/mclaren-f1.01.jpeg",
+        "/images/cars/1990/mclaren-f1.02.jpeg",
+        "/images/cars/1990/mclaren-f1.03.jpeg"
+      ]
+    },
+    {
+      "slug": "honda-nsx",
+      "name": "Honda NSX",
+      "engine": "3.0-litre VTEC V6 petrol (2,977 cc)",
+      "country": "Japan",
+      "year": 1991,
+      "description": "Honda approached the mid-engined sports car with an emphasis on precision, visibility and everyday usability. The original NSX combined an aluminium body with a VTEC V6 behind the seats. Its low bonnet, pop-up headlights and wraparound rear lights gave advanced engineering a clean, restrained shape that still feels distinctive.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 66000,
+        "max": 82000,
+        "asOf": "2026-11-02",
+        "basis": "Rounded UK guide range for good to excellent 3.0-litre NSX coupés. Transmission, import specification, originality and maintenance history affect value; Type R and later 3.2-litre cars are excluded.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?b=Coupe&cc=2977&md=NSX&mk=Honda&sm=3.0+V6&y=1991"
+        ]
+      },
+      "images": [
+        "/images/cars/1990/honda-nsx.01.jpeg",
+        "/images/cars/1990/honda-nsx.02.jpeg",
+        "/images/cars/1990/honda-nsx.03.jpeg"
+      ]
+    },
+    {
+      "slug": "toyota-supra",
+      "name": "Toyota Supra A80 Twin Turbo",
+      "engine": "3.0-litre twin-turbocharged inline-six petrol (2JZ-GTE, 2,997 cc)",
+      "country": "Japan",
+      "year": 1994,
+      "description": "The fourth-generation Supra traded the angular lines of its predecessor for a rounded, muscular body and a driver-focused cockpit. The twin-turbocharged 2JZ-GTE straight-six became central to its reputation. A long bonnet, distinctive rear lights and prominent rear wing helped make the A80 one of the decade’s best-known Japanese performance cars.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 27000,
+        "max": 40000,
+        "asOf": "2026-11-02",
+        "basis": "Indicative GBP range using rounded good-to-excellent figures from the UK guide’s broader 1994 A80 coupé category. This is a proxy, not a turbo-specific appraisal; original twin-turbo manuals can command a premium.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?y=1994&mk=Toyota&md=Supra&sm=A80&cc=2997&b=Coupe"
+        ]
+      },
+      "images": [
+        "/images/cars/1990/toyota-supra.01.jpeg",
+        "/images/cars/1990/toyota-supra.02.jpeg",
+        "/images/cars/1990/toyota-supra.03.jpeg"
+      ]
+    },
+    {
+      "slug": "dodge-viper",
+      "name": "Dodge Viper RT/10",
+      "engine": "8.0-litre V10 petrol",
+      "country": "United States",
+      "year": 1994,
+      "description": "The original Viper revived the idea of a big-engined American roadster with an uncompromising character. Its long bonnet covered an 8.0-litre V10, while side-mounted exhausts and broad rear wings gave the body a purposeful stance. The early RT/10’s open cockpit and simple controls kept the driving experience direct.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 30000,
+        "max": 45000,
+        "asOf": "2026-11-02",
+        "basis": "Editorial GBP range around The Classic Valuer’s roughly £37,000 RT/10 median. Its worldwide, multi-year sales data is a broad reference rather than a 1994 UK condition-specific appraisal; imports, mileage and originality affect value.",
+        "sources": [
+          "https://www.theclassicvaluer.com/buyers-guide/dodge/viper-rt%2F10"
+        ]
+      },
+      "images": [
+        "/images/cars/1990/dodge-viper.01.jpeg",
+        "/images/cars/1990/dodge-viper.02.jpeg",
+        "/images/cars/1990/dodge-viper.03.jpeg"
+      ]
+    },
+    {
+      "slug": "lamborghini-diablo",
+      "name": "Lamborghini Diablo",
+      "engine": "5.7-litre naturally aspirated V12 petrol (5,707 cc)",
+      "country": "Italy",
+      "year": 1991,
+      "description": "The Diablo succeeded the Countach in 1990 with a more rounded interpretation of Lamborghini’s dramatic mid-engined supercar. A 5.7-litre V12, scissor doors and wide rear bodywork preserved the theatre. This early rear-wheel-drive version represents the original design before all-wheel-drive VT models and later styling changes expanded the family.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 145000,
+        "max": 167000,
+        "asOf": "2026-11-02",
+        "basis": "UK guide range for good to excellent early 5.7-litre Diablo coupés. VT, SE30, SV, roadster and later 6.0-litre variants are separate markets.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?b=Coupe&cc=5707&md=Diablo&mk=Lamborghini&sm=Base&y=1991"
+        ]
+      },
+      "images": [
+        "/images/cars/1990/lamborghini-diablo.01.jpeg",
+        "/images/cars/1990/lamborghini-diablo.02.jpeg",
+        "/images/cars/1990/lamborghini-diablo.03.jpeg"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "year": 1950,
+  "title": "A new optimism",
+  "description": "Sculpted curves. Open roads. A world rediscovering the joy of driving.",
+  "cars": [
+    {
+      "slug": "mercedes-benz-300-sl",
+      "name": "Mercedes-Benz 300 SL Gullwing",
+      "engine": "3.0-litre inline-six petrol",
+      "country": "Germany",
+      "year": 1954,
+      "description": "With its roof-hinged gullwing doors and low-slung silhouette, the 300 SL became one of the defining sports cars of the 1950s. Its tubular spaceframe helped give the coupé its distinctive door arrangement, while a three-litre six-cylinder engine delivered performance to match the dramatic design.",
+      "default": true,
+      "images": [
+        "/images/cars/1950/mercedes-benz-300-sl.01.jpeg",
+        "/images/cars/1950/mercedes-benz-300-sl.02.jpeg",
+        "/images/cars/1950/mercedes-benz-300-sl.03.jpeg"
+      ],
+      "cost": {
+        "currency": "GBP",
+        "min": 1100000,
+        "max": 1400000,
+        "asOf": "2026-11-02",
+        "basis": "Indicative UK market range for good to excellent standard examples; condition, originality and provenance affect value.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?b=Coupe&cc=2996&md=300SL&mk=Mercedes-Benz&sm=Gullwing&y=1954"
+        ]
+      }
+    },
+    {
+      "slug": "citroen-ds-19",
+      "name": "Citroën DS 19",
+      "engine": "1.9-litre inline-four petrol (1,911 cc)",
+      "country": "France",
+      "year": 1956,
+      "description": "Unveiled in Paris in 1955, the DS looked like a visitor from the future. Its flowing bodywork and hydropneumatic suspension offered a fresh vision of comfort and engineering. This early DS 19 represents the French innovation that made the model a landmark of post-war motoring.",
+      "default": false,
+      "images": [
+        "/images/cars/1950/citroen-ds-19.01.jpeg",
+        "/images/cars/1950/citroen-ds-19.02.jpeg",
+        "/images/cars/1950/citroen-ds-19.03.jpeg"
+      ],
+      "cost": {
+        "currency": "GBP",
+        "min": 10000,
+        "max": 17000,
+        "asOf": "2026-11-02",
+        "basis": "Indicative UK market range for good to excellent standard examples; condition, originality and provenance affect value.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?b=Saloon&cc=1911&md=DS19&mk=Citroen&sm=Base&y=1956"
+        ]
+      }
+    },
+    {
+      "slug": "chevrolet-bel-air",
+      "name": "Chevrolet Bel Air",
+      "engine": "4.6-litre V8 petrol (283 cu in option)",
+      "country": "United States",
+      "year": 1957,
+      "description": "Tailfins, a wide chrome grille, and bold two-tone styling made the 1957 Bel Air an enduring symbol of American motoring. Available with Chevrolet’s 283-cubic-inch V8, it combined everyday appeal with the optimism and visual theatre of the decade. Few cars capture the spirit of the American fifties so clearly.",
+      "default": false,
+      "images": [
+        "/images/cars/1950/chevrolet-bel-air.01.jpeg",
+        "/images/cars/1950/chevrolet-bel-air.02.jpeg",
+        "/images/cars/1950/chevrolet-bel-air.03.jpeg"
+      ],
+      "cost": {
+        "currency": "GBP",
+        "min": 14000,
+        "max": 25000,
+        "asOf": "2026-11-02",
+        "basis": "Editorial UK estimate for a roadworthy four-door sedan, informed by a £13,800 July 2026 auction sale and European sedan asking prices. Coupés and convertibles can command more.",
+        "sources": [
+          "https://www.manorparkclassics.com/auction/lot/lot-246---1957-chevrolet-bel-air/?au=81&lot=6770",
+          "https://www.classic-trader.com/uk/cars/search/chevrolet/bel-air"
+        ]
+      }
+    },
+    {
+      "slug": "porsche-356",
+      "name": "Porsche 356 1100",
+      "engine": "1.1-litre air-cooled flat-four petrol",
+      "country": "Germany",
+      "year": 1950,
+      "description": "The early 356 established the rounded shape and lightweight sports-car approach that would become Porsche signatures. German series production began in Stuttgart in 1950. Its compact, rear-mounted flat-four engine and split windscreen give this early coupé a character distinct from the later 356 variants.",
+      "default": false,
+      "images": [
+        "/images/cars/1950/porsche-356.01.jpeg",
+        "/images/cars/1950/porsche-356.02.jpeg",
+        "/images/cars/1950/porsche-356.03.jpeg"
+      ],
+      "cost": {
+        "currency": "GBP",
+        "min": 200000,
+        "max": 350000,
+        "asOf": "2026-11-02",
+        "basis": "Editorial UK estimate for an early steel-bodied split-screen coupé, using a £299,950 asking price for a comparable 1951 Pre-A as context. Exact 1950 1100 data is scarce; this is a comparable-based estimate, not a verified model-specific guide value.",
+        "sources": [
+          "https://www.carandclassic.com/car/C2223643"
+        ]
+      }
+    },
+    {
+      "slug": "morris-mini-minor",
+      "name": "Morris Mini-Minor",
+      "engine": "848 cc transverse inline-four petrol",
+      "country": "United Kingdom",
+      "year": 1959,
+      "description": "Launched in 1959 alongside the Austin Seven, the Morris Mini-Minor rethought how much car could fit into a small footprint. Alec Issigonis’s transverse engine layout helped make room for passengers in a remarkably compact body. The original Mini became a British design icon and a new reference point for small cars.",
+      "default": false,
+      "images": [
+        "/images/cars/1950/morris-mini-minor.01.jpeg",
+        "/images/cars/1950/morris-mini-minor.02.jpeg",
+        "/images/cars/1950/morris-mini-minor.03.jpeg"
+      ],
+      "cost": {
+        "currency": "GBP",
+        "min": 13000,
+        "max": 17000,
+        "asOf": "2026-11-02",
+        "basis": "Indicative UK market range for good to excellent standard examples; condition, originality and provenance affect value.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?b=2dr+Saloon&cc=848&md=Mini&mk=Morris&sm=Mk+I&y=1959"
+        ]
+      }
+    }
+  ]
+}

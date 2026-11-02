@@ -1,0 +1,127 @@
+{
+  "year": 2010,
+  "title": "The next chapter",
+  "description": "Electric thinking and combustion heritage find common ground.",
+  "cars": [
+    {
+      "slug": "bmw-i8",
+      "name": "BMW i8",
+      "engine": "1.5-litre turbocharged inline-three petrol with electric motor (plug-in hybrid)",
+      "country": "Germany",
+      "year": 2014,
+      "description": "The i8 brought BMW’s plug-in hybrid technology to a dramatically shaped sports coupé. Its turbocharged three-cylinder engine drove the rear wheels while an electric motor powered the front axle. A carbon-fibre passenger cell, rising doors and sculpted rear bodywork gave this efficient approach to performance an unmistakably futuristic identity.",
+      "default": true,
+      "cost": {
+        "currency": "GBP",
+        "min": 30000,
+        "max": 37000,
+        "asOf": "2026-11-02",
+        "basis": "Rounded UK guide range for good to excellent standard 2014 i8 coupés. Battery condition, service history, mileage and specification affect value; later updated cars and Roadsters are separate models.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?y=2014&mk=BMW&md=i8&sm=Base&cc=1499&b=Coupe"
+        ]
+      },
+      "images": [
+        "/images/cars/2010/bmw-i8.01.jpeg",
+        "/images/cars/2010/bmw-i8.02.jpeg",
+        "/images/cars/2010/bmw-i8.03.jpeg"
+      ]
+    },
+    {
+      "slug": "mclaren-12c",
+      "name": "McLaren MP4-12C",
+      "engine": "3.8-litre twin-turbocharged V8 petrol (3,799 cc)",
+      "country": "United Kingdom",
+      "year": 2012,
+      "description": "The MP4-12C marked the start of McLaren’s modern series-production sports-car range. A carbon-fibre passenger structure, twin-turbocharged V8 and dual-clutch transmission formed its technical core. The low body, dihedral doors and restrained cabin reflected an engineering-led approach, combining exceptional performance with a surprisingly usable road-car character.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 64000,
+        "max": 77000,
+        "asOf": "2026-11-02",
+        "basis": "Rounded UK guide range for good to excellent standard 2012 MP4-12C coupés. Maintenance history, specification and modifications affect value; Spider and GT3 competition versions are excluded.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?b=Coupe&cc=3799&md=MP4-12C&mk=McLaren&sm=Base&y=2012"
+        ]
+      },
+      "images": [
+        "/images/cars/2010/mclaren-12c.01.jpeg",
+        "/images/cars/2010/mclaren-12c.02.jpeg",
+        "/images/cars/2010/mclaren-12c.03.jpeg"
+      ]
+    },
+    {
+      "slug": "porsche-918-spyder",
+      "name": "Porsche 918 Spyder",
+      "engine": "4.6-litre naturally aspirated V8 with two electric motors (plug-in hybrid)",
+      "country": "Germany",
+      "year": 2015,
+      "description": "The 918 Spyder combined a high-revving V8 with two electric motors to explore a new form of Porsche performance. Its plug-in hybrid system and all-wheel drive brought electric assistance to the supercar experience. Removable roof panels, distinctive exhaust outlets above the engine and a rising centre console completed its striking design.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 1500000,
+        "max": 1700000,
+        "asOf": "2026-11-02",
+        "basis": "UK guide range for good to excellent standard 2015 918 Spyder examples. Weissach-package cars, special finishes, mileage and provenance can command different values.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?y=2015&mk=Porsche&md=918&sm=Base&cc=4593&b=Spyder"
+        ]
+      },
+      "images": [
+        "/images/cars/2010/porsche-918-spyder.01.jpeg",
+        "/images/cars/2010/porsche-918-spyder.02.jpeg",
+        "/images/cars/2010/porsche-918-spyder.03.jpeg"
+      ]
+    },
+    {
+      "slug": "ferrari-458-italia",
+      "name": "Ferrari 458 Italia",
+      "engine": "4.5-litre naturally aspirated V8 petrol (4,497 cc)",
+      "country": "Italy",
+      "year": 2010,
+      "description": "The 458 Italia paired a naturally aspirated V8 with a seven-speed dual-clutch transmission and a sharply focused cockpit. Its flowing Pininfarina bodywork integrated aerodynamic details into a compact mid-engined shape. Triple central exhaust outlets and controls gathered around the steering wheel became distinctive features of this celebrated Ferrari generation.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 115000,
+        "max": 134000,
+        "asOf": "2026-11-02",
+        "basis": "UK guide range for good to excellent standard 2010 458 Italia coupés. Condition, mileage and service history affect value; Spider, Speciale and Challenge versions are separate markets.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?y=2010&mk=Ferrari&md=458&sm=Italia&cc=4497&b=Coupe"
+        ]
+      },
+      "images": [
+        "/images/cars/2010/ferrari-458-italia.01.jpeg",
+        "/images/cars/2010/ferrari-458-italia.02.jpeg",
+        "/images/cars/2010/ferrari-458-italia.03.jpeg"
+      ]
+    },
+    {
+      "slug": "mercedes-benz-sls-amg",
+      "name": "Mercedes-Benz SLS AMG",
+      "engine": "6.2-litre naturally aspirated V8 petrol (6,208 cc; marketed as 6.3)",
+      "country": "Germany",
+      "year": 2010,
+      "description": "The SLS AMG revived the gullwing door for a new Mercedes-Benz sports car. A long bonnet, rear-set cabin and naturally aspirated V8 gave it classic front-engined proportions, while an aluminium structure and rear-mounted dual-clutch transmission supplied modern engineering. Its wide stance and dramatic doors linked AMG performance with the marque’s sports-car heritage.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 172000,
+        "max": 211000,
+        "asOf": "2026-11-02",
+        "basis": "UK guide range for good to excellent standard 2010 C197 SLS AMG coupés. Roadster, GT, Black Series and Electric Drive variants have different values.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?y=2010&mk=Mercedes-Benz&md=SLS&sm=C197&cc=6208&b=Coupe"
+        ]
+      },
+      "images": [
+        "/images/cars/2010/mercedes-benz-sls-amg.01.jpeg",
+        "/images/cars/2010/mercedes-benz-sls-amg.02.jpeg",
+        "/images/cars/2010/mercedes-benz-sls-amg.03.jpeg"
+      ]
+    }
+  ]
+}

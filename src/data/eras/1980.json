@@ -1,0 +1,127 @@
+{
+  "year": 1980,
+  "title": "Poster-car dreams",
+  "description": "Turbocharged ambition and unmistakable shapes for the bedroom wall.",
+  "cars": [
+    {
+      "slug": "ferrari-f40",
+      "name": "Ferrari F40",
+      "engine": "2.9-litre twin-turbocharged V8 petrol (2,936 cc)",
+      "country": "Italy",
+      "year": 1988,
+      "description": "Unveiled in 1987, the F40 brought Ferrari’s racing instincts to a dramatic road car. Its twin-turbocharged V8, lightweight construction and stripped-back cabin put performance first. The fixed rear wing and low, angular body made it one of the defining poster cars of the 1980s.",
+      "default": true,
+      "cost": {
+        "currency": "GBP",
+        "min": 2600000,
+        "max": 3200000,
+        "asOf": "2026-11-02",
+        "basis": "Good-to-excellent UK guide range for a standard 1988 F40. Competition conversions and exceptional provenance can command different prices.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?b=Coupe&cc=2936&md=F40&mk=Ferrari&sm=Base&y=1988"
+        ]
+      },
+      "images": [
+        "/images/cars/1980/ferrari-f40.01.jpeg",
+        "/images/cars/1980/ferrari-f40.02.jpeg",
+        "/images/cars/1980/ferrari-f40.03.jpeg"
+      ]
+    },
+    {
+      "slug": "porsche-959",
+      "name": "Porsche 959 Komfort",
+      "engine": "2.85-litre twin-turbocharged flat-six petrol (2,849 cc)",
+      "country": "Germany",
+      "year": 1988,
+      "description": "The 959 made advanced engineering part of the supercar story. Its twin-turbocharged flat-six, all-wheel drive and carefully shaped body combined extraordinary performance with grand-touring comfort. The Komfort version represents Porsche’s sophisticated approach to the decade’s supercar rivalry, retaining a welcoming cabin beneath its unmistakable rear bodywork.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 1300000,
+        "max": 1900000,
+        "asOf": "2026-11-02",
+        "basis": "Good-to-excellent UK guide range for a Series 1 959 Komfort. Sport versions, later cars, mileage and specialist maintenance history affect value.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?b=Coupe+Komfort&cc=2849&md=959&mk=Porsche&sm=Series+1&y=1988"
+        ]
+      },
+      "images": [
+        "/images/cars/1980/porsche-959.01.jpeg",
+        "/images/cars/1980/porsche-959.02.jpeg",
+        "/images/cars/1980/porsche-959.03.jpeg"
+      ]
+    },
+    {
+      "slug": "bmw-m3",
+      "name": "BMW M3 E30",
+      "engine": "2.3-litre inline-four petrol (S14, 2,302 cc)",
+      "country": "Germany",
+      "year": 1987,
+      "description": "Created with touring-car competition in mind, the original M3 transformed BMW’s compact two-door saloon with a high-revving four-cylinder engine and distinctive widened bodywork. The E30 generation balanced everyday practicality with motorsport purpose. Its boxy arches, rear wing and focused driving character became enduring signatures of the M badge.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 58000,
+        "max": 77000,
+        "asOf": "2026-11-02",
+        "basis": "Rounded UK guide range for good to excellent standard 2.3-litre E30 M3 examples. Evolution specials, Sport Evolution cars and competition histories are separate markets.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?b=Coupe&cc=2302&md=M3&mk=BMW&sm=E30&y=1987"
+        ]
+      },
+      "images": [
+        "/images/cars/1980/bmw-m3.01.jpeg",
+        "/images/cars/1980/bmw-m3.02.jpeg",
+        "/images/cars/1980/bmw-m3.03.jpeg"
+      ]
+    },
+    {
+      "slug": "delorean-dmc-12",
+      "name": "DeLorean DMC-12",
+      "engine": "2.8-litre PRV V6 petrol (2,849 cc)",
+      "country": "United Kingdom",
+      "year": 1981,
+      "description": "Built in Northern Ireland, the DMC-12 paired stainless-steel exterior panels with dramatic gullwing doors and a rear-mounted V6. Its angular shape captured a futuristic vision of the sports car. Film fame later made the DeLorean a cultural icon, but the original road car remains a distinctive piece of 1980s design.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 37000,
+        "max": 57000,
+        "asOf": "2026-11-02",
+        "basis": "Rounded UK guide range for good to excellent standard DMC-12 examples. Transmission, restoration quality and chassis condition affect value; film-replica conversions are excluded.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?b=Coupe&cc=2849&md=DMC-12&mk=Delorean&sm=Base&y=1981"
+        ]
+      },
+      "images": [
+        "/images/cars/1980/delorean-dmc-12.01.jpeg",
+        "/images/cars/1980/delorean-dmc-12.02.jpeg",
+        "/images/cars/1980/delorean-dmc-12.03.jpeg"
+      ]
+    },
+    {
+      "slug": "peugeot-205-gti",
+      "name": "Peugeot 205 GTI 1.6",
+      "engine": "1.6-litre fuel-injected inline-four petrol (1,580 cc)",
+      "country": "France",
+      "year": 1986,
+      "description": "The 205 GTI brought lively performance to Peugeot’s small three-door hatchback. Introduced in 1984, the 1.6-litre model combined a light body with fuel injection and an engaging chassis. Red trim, sporting seats and compact proportions helped turn a practical everyday car into one of the decade’s most recognisable hot hatches.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 11000,
+        "max": 19000,
+        "asOf": "2026-11-02",
+        "basis": "Rounded UK guide range for good to excellent 1986 1.6-litre 205 GTI examples. The later 1.9-litre variant, limited editions and modified cars have different values.",
+        "sources": [
+          "https://www.hagerty.co.uk/valuation/tool/results/?b=Hatchback&cc=1580&md=205&mk=Peugeot&sm=GTi&y=1986"
+        ]
+      },
+      "images": [
+        "/images/cars/1980/peugeot-205-gti.01.jpeg",
+        "/images/cars/1980/peugeot-205-gti.02.jpeg",
+        "/images/cars/1980/peugeot-205-gti.03.jpeg"
+      ]
+    }
+  ]
+}

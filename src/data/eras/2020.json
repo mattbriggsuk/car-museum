@@ -1,0 +1,128 @@
+{
+  "year": 2020,
+  "title": "Tomorrow, in motion",
+  "description": "A new era of electric performance begins to take shape.",
+  "cars": [
+    {
+      "slug": "rimac-nevera",
+      "name": "Rimac Nevera",
+      "engine": "Four electric motors with all-wheel torque vectoring",
+      "country": "Croatia",
+      "year": 2022,
+      "description": "The Nevera brought Rimac’s electric hypercar project into production in 2022. Four independently controlled electric motors and a carbon-fibre structure put battery technology at the centre of the performance story. Its sculpted body, distinctive side channels and carefully finished two-seat cabin show a different approach to the modern supercar.",
+      "default": true,
+      "cost": {
+        "currency": "GBP",
+        "min": 1100000,
+        "max": 1500000,
+        "asOf": "2026-11-02",
+        "basis": "Editorial GBP estimate around the consulted worldwide sales reference of roughly £1.25 million. Public Nevera sales evidence is extremely sparse, so this is a broad inference rather than a condition-specific appraisal. Nevera R versions are excluded.",
+        "sources": [
+          "https://www.theclassicvaluer.com/cars/rimac/nevera"
+        ]
+      },
+      "images": [
+        "/images/cars/2020/rimac-nevera.01.jpeg",
+        "/images/cars/2020/rimac-nevera.02.jpeg",
+        "/images/cars/2020/rimac-nevera.03.jpeg"
+      ]
+    },
+    {
+      "slug": "ferrari-roma",
+      "name": "Ferrari Roma",
+      "engine": "3.9-litre twin-turbocharged V8 petrol (3,855 cc)",
+      "country": "Italy",
+      "year": 2021,
+      "description": "The Roma combined Ferrari’s front-engined V8 layout with a restrained, flowing grand-touring shape. A long bonnet, compact rear cabin and body-coloured grille gave it a distinctive identity. Inside, the twin-cockpit dashboard and central touchscreen placed contemporary technology within a design inspired by the marque’s elegant road cars.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 140000,
+        "max": 190000,
+        "asOf": "2026-11-02",
+        "basis": "Editorial GBP range around the consulted worldwide Roma sales median of roughly £166,000. Aggregated results span multiple years and specifications, so this is a broad market reference rather than a 2021 UK condition-specific appraisal. Spider versions are excluded.",
+        "sources": [
+          "https://www.theclassicvaluer.com/cars/ferrari/roma"
+        ]
+      },
+      "images": [
+        "/images/cars/2020/ferrari-roma.01.jpeg",
+        "/images/cars/2020/ferrari-roma.02.jpeg",
+        "/images/cars/2020/ferrari-roma.03.jpeg"
+      ]
+    },
+    {
+      "slug": "porsche-taycan",
+      "name": "Porsche Taycan 4S",
+      "engine": "Dual electric motors with all-wheel drive",
+      "country": "Germany",
+      "year": 2020,
+      "description": "The Taycan brought Porsche’s sports-car priorities to an electric four-door saloon. In 4S form, motors on both axles combined all-wheel drive with a low-mounted battery and a driver-focused cabin. Its low roof, sculpted front wings and full-width rear light bar established a distinctive shape for Porsche’s electric era.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 40000,
+        "max": 55000,
+        "asOf": "2026-11-02",
+        "basis": "Editorial GBP range informed by Porsche Approved used 4S listings, including a consulted 2020 Performance Plus example advertised around £49,000. Asking prices are not completed sales; battery capacity, mileage, condition and warranty affect value. Later-generation cars are excluded.",
+        "sources": [
+          "https://finder.porsche.com/gb/en-GB/search/taycan?category=taycan-4s&condition=porsche_approved&model=taycan&page=1",
+          "https://guno0jhlgd.execute-api.eu-west-1.amazonaws.com/porsche/used-cars/2020-porsche-taycan-performance-plus-934kwh-4s-auto-4wd-4-door-40"
+        ]
+      },
+      "images": [
+        "/images/cars/2020/porsche-taycan.01.jpeg",
+        "/images/cars/2020/porsche-taycan.02.jpeg",
+        "/images/cars/2020/porsche-taycan.03.jpeg"
+      ]
+    },
+    {
+      "slug": "maserati-mc20",
+      "name": "Maserati MC20",
+      "engine": "3.0-litre twin-turbocharged Nettuno V6 petrol",
+      "country": "Italy",
+      "year": 2023,
+      "description": "The MC20 returned Maserati to the mid-engined supercar with a carbon-fibre structure and its Nettuno V6. Butterfly doors open onto a deliberately focused two-seat cabin. Flowing bodywork, restrained surfaces and a prominent trident grille combined the brand’s grand-touring identity with a new emphasis on lightweight performance.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 140000,
+        "max": 190000,
+        "asOf": "2026-11-02",
+        "basis": "Editorial GBP range around the consulted worldwide MC20 sales median of roughly £165,000. Aggregated results span multiple model years and specifications, so this is not a 2023 UK condition-specific appraisal. Cielo and GT2 Stradale variants have different values.",
+        "sources": [
+          "https://www.theclassicvaluer.com/cars/maserati/mc20"
+        ]
+      },
+      "images": [
+        "/images/cars/2020/maserati-mc20.01.jpeg",
+        "/images/cars/2020/maserati-mc20.02.jpeg",
+        "/images/cars/2020/maserati-mc20.03.jpeg"
+      ]
+    },
+    {
+      "slug": "lotus-emira",
+      "name": "Lotus Emira V6 First Edition",
+      "engine": "3.5-litre supercharged V6 petrol",
+      "country": "United Kingdom",
+      "year": 2024,
+      "description": "The Emira carried Lotus’s mid-engined sports-car tradition into the 2020s with a more contemporary cabin and sculpted bodywork. The V6 First Edition paired a supercharged engine with a choice of manual or automatic transmission. Compact proportions, prominent air intakes and a low driving position retained the marque’s enthusiast appeal.",
+      "default": false,
+      "cost": {
+        "currency": "GBP",
+        "min": 55000,
+        "max": 75000,
+        "asOf": "2026-11-02",
+        "basis": "Editorial GBP estimate informed by the broader Emira sales guide’s roughly £70,000 median. The guide spans model years, engines and transmissions, so this is a proxy rather than a 2024 V6 First Edition-specific appraisal; condition and specification affect value.",
+        "sources": [
+          "https://www.theclassicvaluer.com/cars/lotus/emira"
+        ]
+      },
+      "images": [
+        "/images/cars/2020/lotus-emira.01.jpeg",
+        "/images/cars/2020/lotus-emira.02.jpeg",
+        "/images/cars/2020/lotus-emira.03.jpeg"
+      ]
+    }
+  ]
+}
